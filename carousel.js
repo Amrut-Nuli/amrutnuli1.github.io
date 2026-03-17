@@ -123,7 +123,7 @@ function createCarousel(container, slides) {
       this.style.display = 'none';
       const fb = document.createElement('div');
       fb.className = 'carousel-placeholder';
-      fb.style.height = '340px';
+      fb.style.height = '250px';
       fb.innerHTML = `<svg width="28" height="28" viewBox="0 0 24 24" fill="none"
         stroke="currentColor" stroke-width="1.5" style="opacity:0.35">
         <rect x="3" y="3" width="18" height="18" rx="2"/>
