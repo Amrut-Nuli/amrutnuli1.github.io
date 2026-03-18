@@ -637,3 +637,125 @@ footer a:hover { color: var(--accent); }
   max-height: 1000px;
   padding: 16px 18px;
 }
+/* ── DARK THEME ────────────────────────── */
+body.dark {
+  --bg:            #0e0e0e;
+  --bg2:           #161616;
+  --bg3:           #1e1e1e;
+  --border:        #262626;
+  --border2:       #333333;
+  --text:          #efefef;
+  --text2:         #aaaaaa;
+  --text3:         #555555;
+  --accent:        #4a9eff;
+  --accent-dim:    #0f2440;
+  --accent-border: #1a4a8a;
+  --green:         #3ecf8e;
+  --green-dim:     #0a2a1e;
+  --green-border:  #1a5a3a;
+  --amber:         #f59e0b;
+  --amber-dim:     #2a1e08;
+  --amber-border:  #5a3a10;
+}
+
+/* toggle button */
+.theme-toggle {
+  margin-left: auto;
+  flex-shrink: 0;
+  background: var(--bg2);
+  border: 1px solid var(--border2);
+  border-radius: 20px;
+  padding: 5px 6px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  transition: background 0.2s, border-color 0.2s;
+}
+.theme-toggle:hover {
+  background: var(--bg3);
+  border-color: var(--text3);
+}
+.theme-toggle-icon {
+  font-size: 14px;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px; height: 24px;
+  border-radius: 50%;
+  transition: background 0.2s;
+}
+.theme-toggle-icon.active {
+  background: var(--accent-dim);
+}
+.theme-toggle-label {
+  font-size: 11px;
+  font-family: 'DM Mono', monospace;
+  color: var(--text3);
+  padding-right: 6px;
+  display: none;
+}
+
+/* keep nav readable in dark mode */
+body.dark nav {
+  background: rgba(14,14,14,0.94);
+}
+
+/* keep spec table readable in dark */
+body.dark .spec-table td:first-child {
+  background: var(--bg2);
+}
+
+/* keep skills-gained box readable in dark */
+body.dark .skills-gained {
+  background: var(--bg2);
+}
+
+/* keep explore cards readable in dark */
+body.dark .explore-card {
+  background: var(--bg2);
+}
+
+/* keep stat cards readable in dark */
+body.dark .stat-card {
+  background: var(--bg2);
+}
+
+/* keep collapsible readable in dark */
+body.dark .collapsible-header {
+  background: var(--bg2);
+}
+body.dark .collapsible-header:hover {
+  background: var(--bg3);
+}
+body.dark .collapsible-body {
+  background: var(--bg);
+}
+
+/* carousel dots in dark */
+body.dark .carousel-dots {
+  background: var(--bg);
+}
+body.dark .carousel-btn {
+  background: rgba(30,30,30,0.9);
+  border-color: rgba(255,255,255,0.1);
+  color: #fff;
+}
+body.dark .carousel-btn:hover {
+  background: rgba(40,40,40,1);
+}
+
+/* cert image placeholder in dark */
+body.dark .cert-img-wrap {
+  background: var(--bg2);
+}
+
+/* research image wrap in dark */
+body.dark .research-img-wrap {
+  background: var(--bg2);
+}
+
+@media (max-width: 620px) {
+  .theme-toggle-label { display: none; }
+}
