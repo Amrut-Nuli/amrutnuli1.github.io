@@ -60,7 +60,7 @@
       <div class="cert-body">
         <div class="cert-issuer">Siemens / Coursera</div>
         <div class="cert-name">Siemens NX: Advanced Design &amp; Applications</div>
-        <!-- ⚠ Update this URL with your correct Coursera credential link -->
+        
         <a class="cert-link" href="#" target="_blank">Verify ↗</a>
       </div>
     </div>
@@ -205,16 +205,29 @@
 
   </div>
 
-  <div style="margin-top:24px; background:var(--amber-dim); border:1px solid var(--amber-border); border-radius:var(--radius-sm); padding:14px 18px; font-size:13px; color:var(--amber);">
-    ⚠ The Siemens NX Advanced Design credential link needs updating — replace the <code style="font-size:12px;">#</code> with your correct Coursera verification URL.
-  </div>
-
 </main>
 
 <footer>
   amrutnuli558@gmail.com &nbsp;·&nbsp;
   <a href="https://www.linkedin.com/in/amrut-nuli/" target="_blank">linkedin.com/in/amrut-nuli</a>
 </footer>
+  
+<script>
+  /* ── THEME TOGGLE ── */
+  function applyTheme(dark) {
+    document.body.classList.toggle('dark', dark);
+    document.getElementById('icon-light').classList.toggle('active', !dark);
+    document.getElementById('icon-dark').classList.toggle('active', dark);
+  }
 
+  function toggleTheme() {
+    const isDark = document.body.classList.contains('dark');
+    localStorage.setItem('theme', isDark ? 'light' : 'dark');
+    applyTheme(!isDark);
+  }
+
+  /* apply saved theme immediately on page load */
+  applyTheme(localStorage.getItem('theme') === 'dark');
+</script>
 </body>
 </html>
