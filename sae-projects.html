@@ -68,7 +68,12 @@
       <li><strong>Innovation:</strong> Composite wing spar (balsa-birch sandwich) improved flexural strength by 15.4%.</li>
       <li><strong>Result:</strong> AIR 1 — highest payload of 9 kg (MTOW 14 kg), all flight requirements completed.</li>
     </ul>
-
+<div class="collapsible" onclick="toggleCollapsible(this)">
+  <div class="collapsible-header">
+    <span class="collapsible-title">General Specifications</span>
+    <span class="collapsible-icon">▼</span>
+  </div>
+  <div class="collapsible-body">
     <div class="label" style="margin-bottom:10px;">Key specs</div>
     <table class="spec-table">
       <tr><td>Wingspan</td><td>2.4 m (94.5 in)</td></tr>
@@ -80,6 +85,9 @@
       <tr><td>Stall speed</td><td>10.34 m/s</td></tr>
       <tr><td>Takeoff distance</td><td>34.33 m</td></tr>
     </table>
+
+    </div>
+</div>
 
     <a class="proj-link" href="https://www.papermark.com/view/cmmnq4bdk0006lc04gyyun6wr" target="_blank">Full project report ↗</a>
   </div>
@@ -162,6 +170,14 @@
 </footer>
 
 <script src="carousel.js"></script>
+  <script>
+  // existing carousel code...
+  createCarousel(document.getElementById('c-sae2022'), [ ... ]);
+
+  // ADD THIS at the bottom of the same script block
+  function toggleCollapsible(el) {
+    el.classList.toggle('open');
+  }
 <script>
   /* ─────────────────────────────────────────────────────────────
      TO ADD YOUR IMAGES:
