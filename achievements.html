@@ -34,9 +34,8 @@
   </div>
 
   <!-- ── ACADEMIC ── -->
-  <div class="label">Academic</div>
   <div class="ach-card" style="margin-bottom:20px;">
-    <div style="display:flex; align-items:flex-start; gap:20px;">
+    <div style="display:flex; align-items:flex-start; gap:20px; margin-bottom:18px;">
       <div class="ach-badge gold">
         <div class="ach-badge-num">#1</div>
         <div class="ach-badge-sub">RANK</div>
@@ -47,7 +46,8 @@
         <div style="font-size:13.5px; color:var(--text3);">Top performer across the entire graduating Mechanical Engineering batch.</div>
       </div>
     </div>
-  </div>
+    <div class="carousel" id="c-ach-academic"></div>
+</div>
 
   <hr/>
 
@@ -129,6 +129,10 @@
 <script src="carousel.js"></script>
 <script>
   /* Put achievement images in images/achievements/<folder>/ */
+createCarousel(document.getElementById('c-ach-academic'), [
+    { src: 'images/achievements/academic/01-convocation.jpg', caption: 'Convocation ceremony' },
+    { src: 'images/achievements/academic/02-rank-certificate.png', caption: 'Rank Certificate' },
+  ]);
 
   createCarousel(document.getElementById('c-ach-sae2022'), [
     { src: 'images/achievements/sae2022/01-team.jpg',       caption: 'SAE Aero Design Challenge 2022 — team' },
