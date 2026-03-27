@@ -19,7 +19,7 @@
     <li><a href="certifications.html">Certifications</a></li>
     <li><a href="research.html">Research</a></li>
   </ul>
-   <button class="theme-toggle" onclick="toggleTheme()" id="theme-btn" title="Toggle dark/light mode">
+  <button class="theme-toggle" onclick="toggleTheme()" id="theme-btn" title="Toggle dark/light mode">
     <span class="theme-toggle-icon" id="icon-light">☀️</span>
     <span class="theme-toggle-icon" id="icon-dark">🌙</span>
   </button>
@@ -30,26 +30,26 @@
   <!-- ── HERO ── -->
   <div class="hero-row">
 
-  <!-- Profile photo -->
-  <div class="avatar-wrap">
-    <img src="images/profile/photo.jpg" alt="Amrut Nuli"
-         onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'"/>
-    <div class="avatar-initials" style="display:none;">AN</div>
-  </div>
-
-  <!-- Name + title -->
-  <div style="flex:1;">
-    <div class="hero-name">Amrut Nuli</div>
-    <div class="hero-title-line">
-      <span>Mechanical Engineer</span>
-      <span class="hero-dot">·</span>
-      <span>CAD / CAE</span>
-      <span class="hero-dot">·</span>
-      <span>Automotive Product Design</span>
+    <!-- Profile photo -->
+    <div class="avatar-wrap">
+      <img src="images/profile/photo.jpg" alt="Amrut Nuli"
+           onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'"/>
+      <div class="avatar-initials" style="display:none;">AN</div>
     </div>
-  </div>
 
-  <!-- Credential badges — right aligned -->
+    <!-- Name + title -->
+    <div style="flex:1; min-width:0;">
+      <div class="hero-name">Amrut Nuli</div>
+      <div class="hero-title-line">
+        <span>Mechanical Engineer</span>
+        <span class="hero-dot">·</span>
+        <span>CAD / CAE</span>
+        <span class="hero-dot">·</span>
+        <span>Automotive Product Design</span>
+      </div>
+    </div>
+
+ <!-- Credential badges — right aligned -->
 <div style="display:flex; flex-direction:column; align-items:flex-end;
             gap:8px; flex-shrink:0;">
   <div style="font-size:10px; font-family:'DM Mono',monospace;
@@ -61,8 +61,8 @@
 
     <a href="https://www.credly.com/badges/6abbfff7-89fe-4c32-a767-18a393b9e136"
        target="_blank" title="Click to verify on Credly">
-      <img src="https://www.credly.com/badges/6abbfff7-89fe-4c32-a767-18a393b9e136/image.png"
-           alt="Credly Badge 1"
+      <img src="images/badges/badge-1.png"
+           alt="Credential Badge 1"
            style="width:52px; height:52px; object-fit:contain;
                   transition:transform 0.2s, opacity 0.2s; opacity:0.9;"
            onmouseover="this.style.transform='scale(1.15)'; this.style.opacity='1'"
@@ -71,8 +71,8 @@
 
     <a href="https://www.credly.com/badges/c53f338e-df03-4ca5-ad99-1e9cc7ef1392"
        target="_blank" title="Click to verify on Credly">
-      <img src="https://www.credly.com/badges/c53f338e-df03-4ca5-ad99-1e9cc7ef1392/image.png"
-           alt="Credly Badge 2"
+      <img src="images/badges/badge-2.png"
+           alt="Credential Badge 2"
            style="width:52px; height:52px; object-fit:contain;
                   transition:transform 0.2s, opacity 0.2s; opacity:0.9;"
            onmouseover="this.style.transform='scale(1.15)'; this.style.opacity='1'"
@@ -81,8 +81,8 @@
 
     <a href="https://www.credly.com/badges/e3f181ad-5f9e-4975-9733-bbbe692f7ce8"
        target="_blank" title="Click to verify on Credly">
-      <img src="https://www.credly.com/badges/e3f181ad-5f9e-4975-9733-bbbe692f7ce8/image.png"
-           alt="Credly Badge 3"
+      <img src="images/badges/badge-3.png"
+           alt="Credential Badge 3"
            style="width:52px; height:52px; object-fit:contain;
                   transition:transform 0.2s, opacity 0.2s; opacity:0.9;"
            onmouseover="this.style.transform='scale(1.15)'; this.style.opacity='1'"
@@ -91,8 +91,18 @@
 
     <a href="https://www.credly.com/badges/d7712d7a-e00e-4a6d-b350-fc04dd3a1cb3"
        target="_blank" title="Click to verify on Credly">
-      <img src="https://www.credly.com/badges/d7712d7a-e00e-4a6d-b350-fc04dd3a1cb3/image.png"
-           alt="Credly Badge 4"
+      <img src="images/badges/badge-4.png"
+           alt="Credential Badge 4"
+           style="width:52px; height:52px; object-fit:contain;
+                  transition:transform 0.2s, opacity 0.2s; opacity:0.9;"
+           onmouseover="this.style.transform='scale(1.15)'; this.style.opacity='1'"
+           onmouseout="this.style.transform='scale(1)'; this.style.opacity='0.9'"/>
+    </a>
+
+     <a href="https://www.credly.com/badges/d7712d7a-e00e-4a6d-b350-fc04dd3a1cb3"
+       target="_blank" title="Click to verify on Credly">
+      <img src="images/badges/badge-5.png"
+           alt="Credential Badge 5"
            style="width:52px; height:52px; object-fit:contain;
                   transition:transform 0.2s, opacity 0.2s; opacity:0.9;"
            onmouseover="this.style.transform='scale(1.15)'; this.style.opacity='1'"
@@ -101,7 +111,8 @@
 
   </div>
 </div>
-</div>
+  <!-- ── END HERO ROW ── -->
+
   <!-- ── CTAs ── -->
   <div class="btn-row">
     <a class="btn primary" href="https://www.papermark.com/view/cmmp3pbql000fjv04pdbtxovd" target="_blank">View CV ↗</a>
@@ -117,11 +128,11 @@
     Mechanical Engineer with 1 year of R&amp;D experience at
     <a href="work-experience.html" style="color:var(--text); border-bottom:1px solid var(--border2); text-decoration:none; font-weight:500;">Daimler Truck Innovation Center India</a>,
     specialising in automotive product design, wiring harness routing, and configuration management
-    using Siemens NX,Smaragd(PDM) and Teamcenter. Achieved AIR 1 in SAE Aero Design challenge 2022
-    being a member of 
-    <a href="https://aerokle.in/" style="color:var(--text); border-bottom:1px solid var(--border2); text-decoration:none; font-weight:500;">AeroKLE SAE Aero design team </a>,
-    Led the team at 2023 SAE Aerothon(AIR 4) and SAE ADDC 2023(AIR 2) ;Gold Medalist in my graduating 
-    batch at KLE Technological University.Currently seeking a challenging Design &amp; Analysis Engineering role.
+    using Siemens NX, Smaragd (PDM) and Teamcenter. Achieved AIR 1 in SAE Aero Design challenge 2022
+    being a member of
+    <a href="https://aerokle.in/" style="color:var(--text); border-bottom:1px solid var(--border2); text-decoration:none; font-weight:500;">AeroKLE SAE Aero design team</a>,
+    Led the team at 2023 SAE Aerothon (AIR 4) and SAE ADDC 2023 (AIR 2); Gold Medalist in my graduating
+    batch at KLE Technological University. Currently seeking a challenging Design &amp; Analysis Engineering role.
   </p>
 
   <hr/>
@@ -230,6 +241,7 @@
   amrutnuli558@gmail.com &nbsp;·&nbsp;
   <a href="https://www.linkedin.com/in/amrut-nuli/" target="_blank">linkedin.com/in/amrut-nuli</a>
 </footer>
+
 <script>
   /* ── THEME TOGGLE ── */
   function applyTheme(dark) {
@@ -244,8 +256,14 @@
     applyTheme(!isDark);
   }
 
-  /* apply saved theme immediately on page load */
-  applyTheme(localStorage.getItem('theme') === 'dark');
+  /* ── RESTORE SAVED THEME ── */
+  (function() {
+    const saved = localStorage.getItem('theme');
+    if (saved === 'dark') applyTheme(true);
+    else applyTheme(false);
+  })();
 </script>
+
 </body>
 </html>
+
